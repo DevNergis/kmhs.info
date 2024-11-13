@@ -13,7 +13,7 @@ export const GET: APIRoute = async ({ request }) => {
     }
 
     try {
-        const school = await School.fromName('근명고등학교');
+        const school = await School.fromName('소사중학교');
         const weekdays = [Weekday.Monday, Weekday.Tuesday, Weekday.Wednesday, Weekday.Thursday, Weekday.Friday];
         const timetable: { [key: string]: any } = {};
 
